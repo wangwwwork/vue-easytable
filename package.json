@@ -3,7 +3,7 @@
   "version": "1.7.0",
   "description": "vue table component",
   "main": "libs/index.js",
-  "author": "https://github.com/huangshuwei",
+  "author": "https://github.com/wangweiwei",
   "license": "MIT",
   "repository": {
     "type": "git",
