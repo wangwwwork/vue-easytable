@@ -1,5 +1,5 @@
 {
-  "name": "vue-easytable-www",
+  "name": "www-studytable",
   "version": "1.7.0",
   "description": "vue table component",
   "main": "libs/index.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangweiwei/vue-easytable.git"
+    "url": "git+https://github.com/wangweiwei/www-studytable.git"
   },
   "files": [
     "libs",
@@ -79,7 +79,7 @@
     "build:all": "npm run build:remove && npm run build:copy && npm run build:js && npm run build:themes && npm run build:umd"
   },
   "bugs": {
-    "url": "https://github.com/huangshuwei/vue-easytable/issues"
+    "url": "https://github.com/wangweiwei/www-studytable/issues"
   },
-  "homepage": "https://github.com/huangshuwei/vue-easytable/blob/master/README.md"
+  "homepage": "https://github.com/wangweiwei/www-studytable/blob/master/README.md"
 }
