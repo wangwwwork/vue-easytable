@@ -1,5 +1,5 @@
 {
-  "name": "vue-easytable",
+  "name": "vue-easytable-www",
   "version": "1.7.0",
   "description": "vue table component",
   "main": "libs/index.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huangshuwei/vue-easytable.git"
+    "url": "git+https://github.com/wangweiwei/vue-easytable.git"
   },
   "files": [
     "libs",
