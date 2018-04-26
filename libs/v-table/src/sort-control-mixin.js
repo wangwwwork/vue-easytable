@@ -48,33 +48,37 @@ exports.default = {
 
             return this.sortColumns[field];
         },
-        sortControl: function sortControl(field) {
+        sortControl: function sortControl(field,orderByValue) {
+          var orderBy = this.sortColumns[field];
 
-            var orderBy = this.sortColumns[field];
+          if (this.enableSort(orderBy)) {
 
-            if (this.enableSort(orderBy)) {
+            if (this.sortAlways) {
 
-                if (this.sortAlways) {
+              this.sortColumns[field] = orderBy === 'asc' ? 'desc' : 'asc';
+            } else {
+              if (this.sortColumns[field] == orderByValue){
+                this.sortColumns[field] = '';
+              }
+              else{
+                this.sortColumns[field] = orderByValue;
 
-                    this.sortColumns[field] = orderBy === 'asc' ? 'desc' : 'asc';
-                } else {
-
-                    this.sortColumns[field] = orderBy === 'asc' ? 'desc' : this.sortColumns[field] === 'desc' ? '' : 'asc';
-                }
-
-                if (!this.multipleSort) {
-
-                    for (var col in this.sortColumns) {
-
-                        if (col !== field) {
-
-                            this.sortColumns[col] = '';
-                        }
-                    }
-                }
-
-                this.$emit('sort-change', this.sortColumns);
+              }
             }
+
+            if (!this.multipleSort) {
+
+              for (var col in this.sortColumns) {
+
+                if (col !== field) {
+
+                  this.sortColumns[col] = '';
+                }
+              }
+            }
+
+            this.$emit('sort-change', this.sortColumns);
+          }
         },
         singleSortInit: function singleSortInit() {
 
