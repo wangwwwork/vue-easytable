@@ -20,42 +20,42 @@
   }
 }
 */
- 
+
  [class^="v-icon-"]:before, [class*=" v-icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .v-icon-down-dir:before { content: '\e800'; } /* '' */
 .v-icon-up-dir:before { content: '\e801'; } /* '' */
 .v-icon-cancel:before { content: '\e802'; } /* '' */
@@ -629,7 +629,7 @@
 }
 
 .table-title{
-    display: inline-block;
+    /*display: inline-block;*/
     padding:0 3px;
     vertical-align: middle;
     word-break: break-all;
@@ -637,37 +637,47 @@
     line-height: 1.2em;
 }
 
+.table-title span:nth-child(2){
+  position: relative;
+  top:-7px;
+}
+.table-title span:nth-child(3){
+  position: relative;
+  top:3px;
+  /*left:-23.5px;*/
+  margin-left: -23.5px;
+}
+
 .v-table-sort-icon {
-    position: relative;
-    display: inline-block;
+    /*position: absolute;*/
+    /*display: inline-block;*/
     vertical-align: middle;
     /*font-size:16px;*/
-    width:16px;
-    height: 19px;
-    margin-left: -5px;
+    width:14px;
+    height: 16px;
+    /*margin-left: -5px;*/
     overflow: hidden;
     cursor: pointer;
 }
 
 .v-table-sort-icon i {
-
-    position: absolute;
-    display: block;
-    width:16px;
-    height: 15px;
-    /*line-height: 12px;*/
-    overflow: hidden;
+    position: relative;
+    /*display: block;*/
+    width:14px;
+    /*height: 16px;*/
+    /*inline-height: 12px;*/
+    /*overflow: hidden;*/
     color: #a6a6a6;
     transition: color .2s ease-in-out;
 }
 
-.v-table-sort-icon i:first-child {
-    top: -5px;
-}
+/*.v-table-sort-icon i:first-child {*/
+    /*top: -5px;*/
+/*}*/
 
-.v-table-sort-icon i:last-child {
-    bottom: 1px;
-}
+/*.v-table-sort-icon i:last-child {*/
+    /*bottom: 1px;*/
+/*}*/
 
 .v-table-header .cursorPointer{
     cursor: pointer;
