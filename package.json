@@ -3,11 +3,11 @@
   "version": "1.7.0",
   "description": "vue table component",
   "main": "libs/index.js",
-  "author": "https://github.com/wangweiwei",
+  "author": "https://github.com/wangwwwork",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangweiwei/www-studytable.git"
+    "url": "git+https://github.com/wangwwwork/www-studytable.git"
   },
   "files": [
     "libs",
@@ -79,7 +79,7 @@
     "build:all": "npm run build:remove && npm run build:copy && npm run build:js && npm run build:themes && npm run build:umd"
   },
   "bugs": {
-    "url": "https://github.com/wangweiwei/www-studytable/issues"
+    "url": "https://github.com/wangwwwork/www-studytable/issues"
   },
-  "homepage": "https://github.com/wangweiwei/www-studytable/blob/master/README.md"
+  "homepage": "https://github.com/wangwwwork/www-studytable/blob/master/README.md"
 }
